@@ -4,7 +4,9 @@
 <title>National Zoological Park</title>
 <link rel="stylesheet" href="p5.css">
 
-</script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -18,13 +20,56 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-
-
 </header>
 
-<section class="hero">
-<h1>Welcome to the National Zoological Park</h1>
-</section>
+
+
+<div id="zooCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#zooCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#zooCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#zooCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="lion.jpg" class="d-block w-100" alt="Lion" style="height:500px; object-fit:cover;">
+      <div class="carousel-caption">
+        <h1>Welcome to the National Zoological Park</h1>
+        <p>Explore amazing wildlife</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="elephant.webp" class="d-block w-100" alt="Elephant" style="height:500px; object-fit:cover;">
+      <div class="carousel-caption">
+        <h1>Discover Wildlife</h1>
+        <p>Meet animals from around the world</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="giraffe.jpg" class="d-block w-100" alt="Giraffe" style="height:500px; object-fit:cover;">
+      <div class="carousel-caption">
+        <h1>Protect Nature</h1>
+        <p>Supporting conservation and education</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#zooCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#zooCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
 
 <section>
 <h2 class="section-title">About the Zoo</h2>
@@ -37,6 +82,8 @@ We focus on conservation, education, and wildlife protection.
 <footer>
 © 2026 National Zoological Park
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
